@@ -71,6 +71,9 @@ AnyadeNoticia() {
     ...this.nuevaNoticia, });
     console.log(this.nuevaNoticia);
 
+    //añadir la noticia al html
+    this.verNoticias();
+
   //limpiar el formulario  
   this.nuevaNoticia = {titulo:"", imagenUrl: "", descripcion:"", fecha:"",}
 };
