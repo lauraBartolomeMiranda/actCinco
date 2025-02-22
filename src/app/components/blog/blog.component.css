@@ -1,0 +1,16 @@
+.formulario{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(208, 152, 152);
+    gap: 20px;
+    padding: 20px;
+}
+
+.listado{
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(152, 208, 208);
+}

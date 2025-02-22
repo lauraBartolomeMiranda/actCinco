@@ -41,9 +41,9 @@ generarNoticias(): string {
   return this.noticias.reduce((docu, noticia) => docu + `
     <div class="noticia">
       <h3>${noticia.titulo}</h3>
-      <h4>${noticia.descripcion}</h4>
+      <p>${noticia.descripcion}</p>
       <img src="${noticia.imagenUrl}"> <!--controlar tamaño-->
-      <h6>${noticia.fecha}</h6>
+      <h5>${noticia.fecha}</h5>
       <hr>
   </div>
   `, '');
