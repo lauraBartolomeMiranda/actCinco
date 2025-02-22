@@ -42,7 +42,7 @@ export class BlogComponent {
 
 //mostrar las noticias en el html
 verNoticias(){
-  document.getElementById('contNoticia')!.innerHTML = this.generarNoticias(); //ojo dom!!
+  document.getElementById('contNoticia')!.innerHTML = this.generarNoticias(); // se que no es lo ideal pero no he conseguido hacerlo de otra manera 
 }
 
 //estructurar la noticia

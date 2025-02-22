@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 620px; /* gap: 250px; depende de la foto*/
+    gap: 620px; 
     max-width: 3500px; 
     width: 90%;
     margin: 15px auto;
