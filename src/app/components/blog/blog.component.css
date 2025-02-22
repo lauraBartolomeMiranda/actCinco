@@ -1,16 +1,77 @@
-.formulario{
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .contendor {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
     justify-content: center;
-    text-align: center;
-    background-color: rgb(208, 152, 152);
-    gap: 20px;
+    align-items: flex-start;
+    gap: 620px; /* gap: 250px; depende de la foto*/
+    max-width: 3500px; 
+    width: 90%;
+    margin: 15px auto;
+    padding: 20px;  
+  }
+
+  .formulario {
+    width:30%;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(121, 93, 76);
+    color: white;
+    border-radius: 10px;
+    text-align: center; 
+  }
+  
+
+
+.listado {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(121, 93, 76);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    max-height: 450px; 
+    overflow-y: auto; /* scroll  */
 }
 
-.listado{
-    padding-top: 20px;
-    text-align: center;
-    background-color: rgb(152, 208, 208);
-}
+
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    
+  }
+    
+   
+  button{
+    background-color: rgb(220, 198, 152);
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+    transition: background o.3s;
+  }
+
+  button:hover{
+    background: rgb(207, 192, 174);
+  }
+
+  .noticia img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+
+
+  

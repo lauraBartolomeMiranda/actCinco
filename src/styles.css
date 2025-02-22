@@ -1,33 +1,38 @@
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(229, 210, 201); /*cambia por foto*/
+    background-image: url('https://i.pinimg.com/736x/be/52/12/be5212e2596d4fcbc0366a79122e53af.jpg ') ;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-    padding-top: 150px; /* Ajusta este valor si el header es más grande */
-    padding-bottom: 40px; /* Espacio para el footer */
+    padding-top: 150px; 
+    padding-bottom: 40px; 
   }
-.header{
-    top: 0;
-    left: 0;
-    color: rgb(252, 252, 252);
-    text-align: center;
-    background: rgb(45,30,23);
+
+
+  .header {
     width: 100%;
+    background: rgb(72, 49, 38);
+    color: white;
+    text-align: center;
     padding: 10px 0;
     position: fixed;
+    top: 0;
+    left: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-.footer{
+.footer {
     width: 100%;
-    color: rgb(252, 252, 252);
+    color: white;
     text-align: center;
     position: fixed;
-    background: rgb(45,30,23);
+    bottom: 0;
     left: 0;
-    bottom:0;
-}
+    background: rgb(72, 49, 38);
+  }
