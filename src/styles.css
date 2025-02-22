@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(229, 210, 201); /*cambia por foto*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    padding-top: 150px; /* Ajusta este valor si el header es más grande */
+    padding-bottom: 40px; /* Espacio para el footer */
+  }
+.header{
+    top: 0;
+    left: 0;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    background: rgb(45,30,23);
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+}
+
+.footer{
+    width: 100%;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    position: fixed;
+    background: rgb(45,30,23);
+    left: 0;
+    bottom:0;
+}

@@ -1,14 +1,23 @@
 import { Component } from '@angular/core';
 import { INoticia } from '../../interfaces/inoticia.interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
   noticias: INoticia[] = []; //array tipado interfaz
+
+  // para guardar la nueva noticia de formulario
+  nuevaNoticia: INoticia = {
+    titulo: '',
+    imagenUrl: '',
+    descripcion: '',
+    fecha: '',
+  };
 
   ngOnInit(){
     this.noticias = [
@@ -27,7 +36,7 @@ export class BlogComponent {
     ];
     console.log('array noticias:', this.noticias)
 
- this.verNoticias()
+    this.verNoticias() //ver noticias inicales
   }
 
 
@@ -49,8 +58,14 @@ generarNoticias(): string {
   `, '');
 }
 
+//necesito recoger la informacion introducida obj nuevaNoticia
+AnyadeNoticia(){
+  //agrega noticia a array
+  this.noticias.push({ 
+    ...this.nuevaNoticia, });
+    console.log(this.nuevaNoticia);
 
-
+};
 
 
 }
