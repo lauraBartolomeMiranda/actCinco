@@ -15,15 +15,42 @@ export class BlogComponent {
       {
         titulo: 'Lanzamiento de Sual!',
         descripcion: 'La nueva marca de accesorios y complementos.',
+        imagenUrl: 'https://static.wixstatic.com/media/d40e1d_54565193a2034ae1843c5bebb5d32272~mv2.png/v1/fill/w_980,h_654,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/d40e1d_54565193a2034ae1843c5bebb5d32272~mv2.png',
         fecha: '2023-06-17'
       },
       {
         titulo: '¿Es sual la nueva competencia de Parfois?',
         descripcion: 'Un análisis sobre la popularidad de sual...',
+        imagenUrl: 'https://img.freepik.com/vector-gratis/complementos-moda-mujer_1114-8.jpg',
         fecha: '2024-01-12'
       }
     ];
     console.log('array noticias:', this.noticias)
+
+ this.verNoticias()
   }
-  
+
+
+//mostrar las noticias en el html
+verNoticias(){
+  document.getElementById('contNoticia')!.innerHTML = this.generarNoticias(); //ojo dom!!
+}
+
+//estructurar la noticia
+generarNoticias(): string {
+  return this.noticias.reduce((docu, noticia) => docu + `
+    <div class="noticia">
+      <h3>${noticia.titulo}</h3>
+      <h4>${noticia.descripcion}</h4>
+      <img src="${noticia.imagenUrl}"> <!--controlar tamaño-->
+      <h6>${noticia.fecha}</h6>
+      <hr>
+  </div>
+  `, '');
+}
+
+
+
+
+
 }
