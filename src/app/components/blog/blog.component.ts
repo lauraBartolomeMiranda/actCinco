@@ -50,8 +50,8 @@ generarNoticias(): string {
   return this.noticias.reduce((docu, noticia) => docu + `
     <div class="noticia">
       <h3>${noticia.titulo}</h3>
+       <img src="${noticia.imagenUrl}"> <!--controlar tamaño-->
       <p>${noticia.descripcion}</p>
-      <img src="${noticia.imagenUrl}"> <!--controlar tamaño-->
       <h5>${noticia.fecha}</h5>
       <hr>
   </div>
@@ -59,12 +59,20 @@ generarNoticias(): string {
 }
 
 //necesito recoger la informacion introducida obj nuevaNoticia
-AnyadeNoticia(){
+AnyadeNoticia() {
+  //comprobar campos vacios
+  if (!this.nuevaNoticia.titulo || !this.nuevaNoticia.imagenUrl || !this.nuevaNoticia.descripcion || !this.nuevaNoticia.fecha){
+    alert('completa todos los campos para continuar');
+    return
+  } 
+
   //agrega noticia a array
   this.noticias.push({ 
     ...this.nuevaNoticia, });
     console.log(this.nuevaNoticia);
 
+  //limpiar el formulario  
+  this.nuevaNoticia = {titulo:"", imagenUrl: "", descripcion:"", fecha:"",}
 };
 
 

@@ -4,7 +4,7 @@
         <h2>Publicar nueva noticia</h2>
         <!--aqui tiene que ir un formulario para poner el titulo, url, descripcion y fecha-->
         <input type="text" placeholder="Titulo de la noticia" [(ngModel)]="nuevaNoticia.titulo" >
-        <input type="text" placeholder="URL imagen"[(ngModel)]="nuevaNoticia.imagenUrl">
+        <input type="text" placeholder="URL de la imagen" [(ngModel)]="nuevaNoticia.imagenUrl">
         <input type="text" placeholder="Descripcion"[(ngModel)]="nuevaNoticia.descripcion">
         <input type="date" placeholder="Fecha"[(ngModel)]="nuevaNoticia.fecha">
         <button (click)="AnyadeNoticia()">Publicar</button>
